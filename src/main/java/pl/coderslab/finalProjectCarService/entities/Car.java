@@ -13,5 +13,7 @@ public class Car {
     private String model;
     private String color;
     private LocalDate productionDate;
+    @ManyToOne
+    private User user;
 
 }
