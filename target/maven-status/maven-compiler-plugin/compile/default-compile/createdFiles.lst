@@ -1,2 +1,8 @@
+pl/coderslab/finalProjectCarService/entities/Product.class
+pl/coderslab/finalProjectCarService/entities/User.class
 pl/coderslab/finalProjectCarService/FinalProjectCarServiceApplication.class
-pl/coderslab/finalProjectCarService/controllers/HomeController.class
+pl/coderslab/finalProjectCarService/services/UserService.class
+pl/coderslab/finalProjectCarService/controllers/UserController.class
+pl/coderslab/finalProjectCarService/repository/UserRepository.class
+pl/coderslab/finalProjectCarService/entities/Maintenance.class
+pl/coderslab/finalProjectCarService/entities/Car.class

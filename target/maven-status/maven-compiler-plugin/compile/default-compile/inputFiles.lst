@@ -1,2 +1,8 @@
 /Users/mac/Documents/CodersLab/FinalProjectCarService/src/main/java/pl/coderslab/finalProjectCarService/FinalProjectCarServiceApplication.java
-/Users/mac/Documents/CodersLab/FinalProjectCarService/src/main/java/pl/coderslab/finalProjectCarService/controllers/HomeController.java
+/Users/mac/Documents/CodersLab/FinalProjectCarService/src/main/java/pl/coderslab/finalProjectCarService/entities/Product.java
+/Users/mac/Documents/CodersLab/FinalProjectCarService/src/main/java/pl/coderslab/finalProjectCarService/entities/Maintenance.java
+/Users/mac/Documents/CodersLab/FinalProjectCarService/src/main/java/pl/coderslab/finalProjectCarService/repository/UserRepository.java
+/Users/mac/Documents/CodersLab/FinalProjectCarService/src/main/java/pl/coderslab/finalProjectCarService/services/UserService.java
+/Users/mac/Documents/CodersLab/FinalProjectCarService/src/main/java/pl/coderslab/finalProjectCarService/controllers/UserController.java
+/Users/mac/Documents/CodersLab/FinalProjectCarService/src/main/java/pl/coderslab/finalProjectCarService/entities/Car.java
+/Users/mac/Documents/CodersLab/FinalProjectCarService/src/main/java/pl/coderslab/finalProjectCarService/entities/User.java
