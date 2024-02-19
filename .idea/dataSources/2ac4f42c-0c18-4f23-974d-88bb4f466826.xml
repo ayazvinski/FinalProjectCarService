@@ -1071,7 +1071,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="310" parent="288" name="users">
+    <table id="310" parent="288" name="user">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
@@ -1103,7 +1103,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <foreign-key id="317" parent="306" name="FKqw4c8e6nqrvy3ti1xj8w8wyc9">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
-      <RefTableName>users</RefTableName>
+      <RefTableName>user</RefTableName>
     </foreign-key>
     <index id="318" parent="306" name="PRIMARY">
       <ColNames>vin_number</ColNames>
@@ -1201,7 +1201,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="338" parent="310" name="id">
-      <AutoIncrement>3</AutoIncrement>
+      <AutoIncrement>4</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>

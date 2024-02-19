@@ -9,11 +9,5 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/CarService")
 public class HomeController {
 
-    @GetMapping("/homepage")
-    public String home() { return "homepage"; }
-
-    @GetMapping("/about")
-    @ResponseBody
-    public String about() { return "Here you can find some details for logged users"; }
 
 }
