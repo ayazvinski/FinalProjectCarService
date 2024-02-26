@@ -1,36 +1,36 @@
 package pl.coderslab.finalProjectCarService.security;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import pl.coderslab.finalProjectCarService.repository.UserRepository;
 
 @Configuration
 @EnableWebSecurity
+@RequiredArgsConstructor
 public class SecurityConfig {
+
+    private final UserRepository userRepository;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.
                 authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/CarService/login", "/CarService/homepage").permitAll()
+                        .requestMatchers("/CarService/login","/CarService").permitAll()
                         .anyRequest().authenticated())
-                .formLogin((login) -> login
+                .formLogin((form) -> form
                         .loginPage("/CarService/login")
-//                                .loginProcessingUrl("/CarService/login")
-//                                .defaultSuccessUrl("/CarService/homepage",true)
+                                .defaultSuccessUrl("/CarService/homepage",true)
                         .permitAll())
                 .logout((logout) -> logout
-//                                .logoutUrl("/CarService/logout")
-//                                .logoutSuccessUrl("/")
+                                .logoutUrl("/CarService/logout")
+                                .logoutSuccessUrl("/")
                         .permitAll());
         return http.build();
     }

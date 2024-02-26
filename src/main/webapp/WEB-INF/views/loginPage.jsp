@@ -44,7 +44,7 @@
 
 <h2>Login</h2>
 
-<form action="<spring:url value="/CarService/login" />" method="post">
+<form method="post">
     <div class="form-group">
         <label for="username">User Name:</label>
         <input type="text" id="username" name="username" required>
