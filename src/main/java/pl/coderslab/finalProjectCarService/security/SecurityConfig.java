@@ -16,18 +16,18 @@ import pl.coderslab.finalProjectCarService.repository.UserRepository;
 @RequiredArgsConstructor
 public class SecurityConfig {
 
-    private final UserRepository userRepository;
+//    private final UserRepository userRepository;
 
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain securityFilterChain (HttpSecurity http) throws Exception {
         http.
                 authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/CarService/login","/CarService").permitAll()
+                        .requestMatchers("/login","/CarService").permitAll()
                         .anyRequest().authenticated())
-                .formLogin((form) -> form
-                        .loginPage("/CarService/login")
-                                .defaultSuccessUrl("/CarService/homepage",true)
-                        .permitAll())
+//                .formLogin((form) -> form
+//                        .loginPage("/CarService/login")
+//                                .defaultSuccessUrl("/CarService/homepage",true)
+//                        .permitAll())
                 .logout((logout) -> logout
                                 .logoutUrl("/CarService/logout")
                                 .logoutSuccessUrl("/")
